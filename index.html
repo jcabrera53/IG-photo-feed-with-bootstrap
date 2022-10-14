@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cfce852bc9.js" crossorigin="anonymous"></script>
+    <title>Instagram feed with Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Instagram
+        </a>
+        <div class="btn-group">
+            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Create a new post</button>
+              <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label for="">Caption</label><br>
+          <textarea name="" id="" cols="60" rows="3" placeholder="Add the caption of your post here"></textarea>
+          <br>
+          <button type="button" class="btn btn-light">
+            <i class="fa-solid fa-camera-retro"></i>
+          </button>
+          <button type="button" class="btn btn-light">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            &nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://cdn-icons-png.flaticon.com/512/22/22377.png" widht="25" height="25" alt="">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">Profile</button>
+              <button class="dropdown-item" type="button">Accesibility</button>
+              <button class="dropdown-item" type="button">Privacy and Data</button>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-danger" href="#">Log out</a>
+            </div>
+          </div>
+      </nav>
+
+  <!--contenido-->
+  <nav>
+    <div class="nav d-flex justify-content-center" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+        <i class="fa-solid fa-border-all"></i>
+      </a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+        <i class="fa-solid fa-square"></i>
+      </a>
+      
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILKxilvq3Q_eWgLbCGp_WKhK35o3aEbqprQ&usqp=CAU" width="30%">
+          <img src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1024/mlb/o1cmus6dshrkbne2vue5.jpg" width="30%" alt="">
+          <img src="https://www.mlbpty.com/wp-content/uploads/2019/12/MLB.jpg" width="30%" alt="">
+          <br><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0tTb6z-J5aecJ3xQ1ZzLBbluv5ffTFizTQ&usqp=CAU" width="30%" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVT61UwmsEkqI615NPvlBjdw3quoV5XKsuxQ&usqp=CAU" width="30%" alt="">
+          <img src="https://www.albat.com/__export/1665668680247/sites/debate/img/2022/10/13/maddon.jpg_2100467590.jpg" width="30%" alt="">
+          <br><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_9BYsI7ZDj7JM90yLTbKcvKEDzrZvCSzdw&usqp=CAU" width="30%" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN99YRR39T5BNG0uQk2MQn9sqwMJ4elWkjjw&usqp=CAU" width="30%" alt="">
+          <img src="https://www.beisbolmlb.com/wp-content/uploads/Judge-350x220.jpeg" width="30%" alt="">
+      </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="card" style="width: 18rem;">
+              <h6 class="text-left"><strong>MLB 001</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILKxilvq3Q_eWgLbCGp_WKhK35o3aEbqprQ&usqp=CAU" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+              </div>
+          </div>
+          <br>
+          <div class="card" style="width: 18rem;">
+            <h6 class="text-left"><strong>MLB 002</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+              <img class="card-img-top" src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1024/mlb/o1cmus6dshrkbne2vue5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+              </div>
+          </div>
+          <br>
+          <div class="card" style="width: 18rem;">
+            <h6 class="text-left"><strong>MLB 003</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+            <img class="card-img-top" src="https://www.mlbpty.com/wp-content/uploads/2019/12/MLB.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+        </div>
+        <br>
+        <div class="card" style="width: 18rem;">
+          <h6 class="text-left"><strong>MLB 004</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0tTb6z-J5aecJ3xQ1ZzLBbluv5ffTFizTQ&usqp=CAU" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+          </div>
+      </div>
+      <br>
+      <div class="card" style="width: 18rem;">
+        <h6 class="text-left"><strong>MLB 005</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVT61UwmsEkqI615NPvlBjdw3quoV5XKsuxQ&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+        </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <h6 class="text-left"><strong>MLB 006</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+      <img class="card-img-top" src="https://www.albat.com/__export/1665668680247/sites/debate/img/2022/10/13/maddon.jpg_2100467590.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+      </div>
+  </div>
+  <br>
+  <div class="card" style="width: 18rem;">
+    <h6 class="text-left"><strong>MLB 007</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_9BYsI7ZDj7JM90yLTbKcvKEDzrZvCSzdw&usqp=CAU" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+    </div>
+</div>
+<br>
+<div class="card" style="width: 18rem;">
+  <h6 class="text-left"><strong>MLB 008</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN99YRR39T5BNG0uQk2MQn9sqwMJ4elWkjjw&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+  </div>
+</div>
+<br>
+<div class="card" style="width: 18rem;">
+  <h6 class="text-left"><strong>MLB 009</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3/8</h6>
+  <img class="card-img-top" src="https://www.beisbolmlb.com/wp-content/uploads/Judge-350x220.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text"><strong>206 likes</strong><br>This is an example of a very good photo that you can post on instagram</p>
+  </div>
+</div>
+<br>
+          </div>
+          <div class="col-3"></div>
+        </div>
+    </div>
+  </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
